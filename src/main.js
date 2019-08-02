@@ -6,7 +6,7 @@ import App from './App'
 Vue.config.productionTip = false;
 
 /* eslint-disable no-new */
-var makeTable = new Vue({
+new Vue({
   el: '#datatables-admin',
   render:h=>h(App)
 });

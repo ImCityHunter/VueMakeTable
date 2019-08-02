@@ -11,7 +11,7 @@ export default{
     return{
       userInput:'',
       styleObject:{
-        bgColor:'',
+        headerBg:'',
         color:'',
         headerColor:'',
         cellColor:'',
@@ -31,13 +31,14 @@ export default{
       catch(e){
         alert('use default table');
       }
-      this.updateStyleObject();
     },
-    updateStyleObject(){
-      this.styleObject.bgColor = this.userInput.bgColor || '#6495ED';
-      this.styleObject.color = this.userInput.color || 'white';
-      this.styleObject.headerColor = this.userInput.headerColor || 'black';
-      this.styleObject.cellColor = this.userInput.cellColor ||'black';
+    updateTableStyle(){
+
+      //new_el.setAttribute('bgColor',this.styleObject.bgColor);
+      document.getElementById('header').style.background = this.userInput.headerBg || 'grey';
+      document.getElementById("header").style.color =  this.userInput.headerColor || 'black';
+      document.getElementById('cell').style.color = this.userInput.cellColor || 'black';
+
     },
     render_table() {
       this.parseInput();
@@ -97,11 +98,7 @@ export default{
         $(".search-filter").removeClass("is-selected");
         $(this).addClass("is-selected");
       });
-      
-      new_el.setAttribute('bgColor',this.styleObject.bgColor);
-      document.getElementById("header").style.color =  this.styleObject.headerColor;
-      document.getElementById('cell').style.color = this.styleObject.cellColor;
-
+      this.updateTableStyle();
     }
   }
 }

@@ -2,7 +2,7 @@
   <div id="datatables-admin">
     <h1>Insert Data</h1>
     <div class="search">
-      <input id='input' type="text" size=100 placeholder="insert format in json"/>
+      <input id='input' type="text" size=100 placeholder='example: {"headerBg":"black","cellColor":"red","headerColor":"pink"}'/>
       <!-- <button class="submit-button" @click="changeInput()">Submit</button> -->
     </div>
     <div class="">
