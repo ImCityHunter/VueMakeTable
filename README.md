@@ -1,10 +1,9 @@
 # VueMakeTable
-Vue Create Editable Table <br>
 
 
 This Project is a modified table from [GhitaB](https://github.com/GhitaB/datatables-admin) <br>
 I added new methods to change the setting of the table. <br> 
-Demo code here is uploaded on Heroku. Click [here] (https://vuemaketable.herokuapp.com/) <br>
+Demo code here is uploaded on Heroku. Click [here](https://vuemaketable.herokuapp.com/) <br>
 
 ### Installation Instruction
 
