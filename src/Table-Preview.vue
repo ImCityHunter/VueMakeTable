@@ -2,21 +2,21 @@
   <div class="table-preview-container">
     <button class='render-table' v-on:click="render_table">Preview Table</button>
     <table class="table-render-preview"></table>
+    <TableToJson id='test2Json' style="display:none"/>
   </div>
 </template>
 <script>
+import TableToJson from './TableToJson'
 export default{
   name:"table-preview",
+  components:{
+    TableToJson
+  },
   data(){
     return{
       userInput:'',
-      styleObject:{
-        headerBg:'',
-        color:'',
-        headerColor:'',
-        cellColor:'',
-        cellBg:''
-      }
+      columns:'',
+      rows:''
     }
   },
   props:{
@@ -33,7 +33,6 @@ export default{
       }
     },
     updateTableStyle(){
-
       //new_el.setAttribute('bgColor',this.styleObject.bgColor);
       document.getElementById('header').style.background = this.userInput.headerBg || 'grey';
       document.getElementById("header").style.color =  this.userInput.headerColor || 'black';
@@ -41,12 +40,14 @@ export default{
 
     },
     render_table() {
+      document.getElementById('test2Json').style.display = 'inline-block';
       this.parseInput();
       var columns = this.$parent.columns;
       var rows = this.$parent.rows;
       var filters = this.$parent.filters;
       var table_placeholder = document.querySelector('.table-render-preview');
-
+      this.columns = columns;
+      this.rows = rows;
       function make_filters_html(filters) {
         var filters_html = "<div class='filters-container'><p><b>Search filters:</b></p><ul class='filters-list'>";
         for(var i = 0; i < filters.length; i++) {
