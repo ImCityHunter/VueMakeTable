@@ -23,7 +23,9 @@ export default {
             }
             plugin.push(item);
           }
+          //internal use jsonArray
           var jsonArray = JSON.parse(JSON.stringify(plugin));
+          alert("here is your data in json");
           alert(JSON.stringify(plugin));
         }
     }
