@@ -2,10 +2,11 @@
   <div id="datatables-admin">
     <h1>Insert Data</h1>
     <div class="search">
+      <!-- take input from user -->
       <input id='input' type="text" size=100 placeholder='example: {"headerBg":"black","cellColor":"red","headerColor":"pink"}'/>
-      <!-- <button class="submit-button" @click="changeInput()">Submit</button> -->
     </div>
     <div class="">
+      <!-- editable table -->
       <table id="editor">
         <thead>
           <tr>
@@ -42,6 +43,8 @@
         <span v-text="rows"></span>
       </p>
     </div>
+
+    <!-- call to create table -->
     <table-preview id="preview"></table-preview>
   </div>
 </template>
@@ -262,4 +265,5 @@ export default {
 }
 </script>
 
+<!-- call to access CSS for this project -->
 <style>@import url("styles.css");</style>
