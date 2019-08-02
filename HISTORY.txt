@@ -1,0 +1,43 @@
+Changelog
+=========
+
+1.0.3 - (unreleased)
+--------------------
+
+1.0.2 - (2018-10-26)
+--------------------
+* Fix:
+  - update the date structure to have ids for all cells in order to fix the
+    rendering of table on rows / columns order change
+  - fix links rendering
+
+* Improve:
+  - design
+  - trim input
+
+* Features:
+  - debug mode
+  - add search filters
+
+1.0.1 - (2018-10-10)
+--------------------
+* Fix:
+  - compatibility with IE (by restructuring the project)
+  - bug on Firefox (because of undefined event)
+
+* Improve:
+  - add favicon
+  - new color scheme
+  - improve styles
+  - add folders structure
+
+1.0.0 - (2018-10-03)
+--------------------
+* Features:
+  - define columns, change their order, delete
+  - define rows, change their order, delete
+  - edit any cell (navigate between editable cell using Tab / Shift + Tab)
+  - delete all columns, delete all rows
+  - render the current table as Datatable (and re-render anytime) by pressing
+    "Preview table" button
+  - sort the rendered table, filter by any word (the URL is included as searchable text)
