@@ -35,3 +35,9 @@ Inserting input, changing table data, then click enter. <br>
 3. Table-Preview.vue generates a table from parent <br>
 4. Editable.vue keeps table editable before made <br>
 5. Within App.vue, updateStyleObject is what changed the table setting <br>
+
+### Deploying on Heroku
+
+1. Read [This](https://medium.com/netscape/deploying-a-vue-js-2-x-app-to-heroku-in-5-steps-tutorial-a69845ace489)  <br>
+2. And read [This](https://medium.com/binarcode/deploying-vue-apps-to-heroku-the-right-way-26b11c1ae5cd)  <br>
+3. I had to combine knowledge from both of these webs to make my project work. 
