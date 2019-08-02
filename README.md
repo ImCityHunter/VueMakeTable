@@ -24,12 +24,13 @@ npm install
 ### Sample JSON input to alter table
 {"headerColor":"yellow","bgColor":"black","cellColor":"red"} <br>
 
-Inserting input, changing table data, then click enter. 
+Inserting input, changing table data, then click enter. <br>
+<br>
+<br>
 
-
-### Design Structure
-Main.js --> App.Vue --> Table-Preview.vue & Editable.vue <br>
-App.vue takes user json input and table input <br>
-Table-Preview.vue generates a table from parent <br>
-Editable.vue keeps table editable before made <br>
-Within App.vue, updateStyleObject is what changed the table setting <br>
+### Design 
+1. Main.js --> App.Vue --> Table-Preview.vue & Editable.vue <br>
+2. App.vue takes user json input and table input <br>
+3. Table-Preview.vue generates a table from parent <br>
+4. Editable.vue keeps table editable before made <br>
+5. Within App.vue, updateStyleObject is what changed the table setting <br>
