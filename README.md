@@ -3,6 +3,7 @@
 
 This Project is a modified table from [GhitaB](https://github.com/GhitaB/datatables-admin) <br>
 I added new methods to change the setting of the table. <br> 
+I also made a major structure update from the original main.js & app.vue <br>
 Demo code here is uploaded on Heroku. Click [here](https://vuemaketable.herokuapp.com/) <br>
 
 ### Installation Instruction
@@ -26,4 +27,9 @@ npm install
 Inserting input, changing table data, then click enter. 
 
 
-
+### Design Structure
+Main.js --> App.Vue --> Table-Preview.vue & Editable.vue <br>
+App.vue takes user json input and table input <br>
+Table-Preview.vue generates a table from parent <br>
+Editable.vue keeps table editable before made <br>
+Within App.vue, updateStyleObject is what changed the table setting <br>
