@@ -3,7 +3,7 @@
 This Project is a modified Project from [GhitaB](https://github.com/GhitaB/datatables-admin) <br>
 Demo code here is uploaded on Heroku. Click [here](https://vuemaketable.herokuapp.com/) <br>
 
-### Additional Functions From GhitaB's code
+### Additional Functions On Top of GhitaB's code
 
 1. change result table's format (color, background, etc *still developing) <br>
 2. major change in main.js and app.vue <br>
