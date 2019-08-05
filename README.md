@@ -9,6 +9,7 @@ Demo code here is uploaded on Heroku. Click [here](https://vuemaketable.herokuap
 2. major change in main.js and app.vue <br>
 3. able to convert the result table to json <br>
 4. additional features are designed by me. welcome to modified and change!
+5. At the end, i implemented a simple feature that will convert the table to json. 
 
 ### Installation Instruction
 
@@ -40,4 +41,4 @@ Inserting input, changing table data, then click enter. <br>
 
 1. Read [This](https://medium.com/netscape/deploying-a-vue-js-2-x-app-to-heroku-in-5-steps-tutorial-a69845ace489)  <br>
 2. And read [This](https://medium.com/binarcode/deploying-vue-apps-to-heroku-the-right-way-26b11c1ae5cd)  <br>
-3. I had to combine knowledge from both of these webs to make my project work. 
+3. I had to combine knowledge from both of these webs to upload this to project on heroku. 
